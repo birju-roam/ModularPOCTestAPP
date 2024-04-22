@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven{
+            url 'https://com-test-roam-android.s3.amazonaws.com/'
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url 'https://com-test-roam-android.s3.amazonaws.com/'
+        }
+    }
+}
+
+rootProject.name = "ModularPOCTestAPP"
+include ':app'
